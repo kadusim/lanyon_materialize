@@ -1,0 +1,165 @@
+body {
+  font-family: 'Inconsolata', monospace;
+}
+
+.navbar-fixed{
+  z-index: 1000;
+  /* position: relative */
+}
+
+.container {
+  max-width: 900px;
+}
+
+.personal-row-title {
+  margin: 0px;
+}
+
+.personal-row-date {
+  color: #C1C1C1;
+  font-size: 1.3rem;
+  margin: 0px;
+}
+
+.personal-title {
+  color: #616161;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 4rem;
+}
+
+.personal-text-color {
+  color: #616161;
+}
+
+.personal-nav {
+  background-color: transparent;
+}
+
+.nav-title-name {
+  border-bottom: 1px solid;
+  border-bottom-color: #C1C1C1;
+  color: #616161;
+  font-size: 1.8rem;
+  margin-top: -53px;
+  padding: 0;
+  padding-bottom: 0.9rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Custom Stylesheet */
+/**
+* Use this file to override Materialize files so you can update
+* the core Materialize files in the future
+*
+* Made By MaterializeCSS.com
+*/
+
+/* nav ul a,
+nav .brand-logo {
+  color: #444;
+} */
+/*
+p {
+  line-height: 2rem;
+} */
+
+/* .button-collapse {
+  color: #039be5;
+} */
+
+/* @media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+} */
+
+
+/* @media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+} */
+
+
+
+/* .icon-block {
+  padding: 0 15px;
+} */
+
+/* footer.page-footer {
+  margin: 0;
+} */
+
+/* .portfolio .col
+{
+  margin-bottom: 24px;
+} */
+
+/* .portfolio h4
+{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+} */
+
+/* .portfolio h5
+{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+} */
+
+/* .portfolio h6
+{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+} */
+
+/* .portfolio hr
+{
+  width: 40px;
+  margin-bottom: 45px;
+} */
+
+/* .portfolio .portfolio-holder
+{
+  clear: both;
+  text-align: center;
+} */
+
+/* .portfolio img
+{
+  width: 33%;
+  display: inline-block;
+  float: left;
+} */
+
+/* .myborder
+{
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.social-links {
+  margin: 10px;
+}
+
+.social-icons {
+  font-size:32px;
+}
+
+#social-icons {
+  margin-top: 35px;
+}
+
+#social-icons a {
+  text-decoration: none;
+} */
