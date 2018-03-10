@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+
+    <div class="navbar-fixed">
+      <nav class="personal-nav z-depth-0">
+        <div class="nav-wrapper">
+          <ul id="slide-out" class="side-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <a href="#" data-activates="slide-out" class="button-collapse show-on-large">
+            <i class="material-icons personal-text-color">menu</i>
+          </a>
+          <!-- <a id="logo-container" href="#!" class="nav-title-name">Kadu Simões</a> navbar logo -->
+        </div>
+      </nav>
+    </div>
+
+    <main>
+
+      <div class="row nav-title-name">
+        Kadu Simões
+      </div>
+
+      <div class="container">
+
+        <!-- Post -->
+        <div class="row personal-row-title">
+          <div class="personal-title-post col s12">
+            Lorem ipsum dolor sit amet
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row personal-row-date">
+          <div class="col s12">
+            20 Feb 2018
+          </div>
+        </div>
+
+
+        <div class="section">
+
+          <div class="personal-content-post">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id erat molestie eros cursus finibus vel sit amet massa. Fusce sed enim lacinia turpis suscipit viverra eget a nisi. In hac habitasse platea dictumst. Vivamus in eleifend urna. Vivamus ac enim sit amet lorem facilisis congue. Praesent vitae nisi felis. Praesent in tortor aliquam, aliquam mauris vel, consectetur velit. Vestibulum felis tellus, vulputate id volutpat ultricies, accumsan ac nisl. Mauris tristique sem sit amet purus bibendum consequat. Donec a porttitor diam. In ac aliquam eros. Etiam sit amet tortor massa. Curabitur vel blandit arcu. Nunc consectetur porta velit id varius. Maecenas at ornare dui. Nullam interdum, lacus in tristique varius, felis diam viverra elit, vitae fringilla tortor ante vitae turpis.
+            </p>
+          </div>
+
+          <h5 class="personal-subtitle-post">Consectetur adipiscing elit</h5>
+          <div class="personal-content-post">
+            <p>
+              Vestibulum pharetra mauris ut ante ultrices cursus. Integer blandit justo a ante cursus feugiat. Donec eget pharetra dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque scelerisque tristique. Phasellus in arcu fermentum, commodo tortor sit amet, imperdiet enim. Vivamus ac arcu in tortor iaculis interdum. In nec nisi in orci placerat sollicitudin. Sed congue faucibus mi, in mattis dui dictum sed. Suspendisse eu elementum nibh. Praesent dui odio, faucibus vel tempus eu, commodo mattis augue.
+            </p>
+          </div>
+
+          <pre>
+            <code>
+              class Product
+                attr_accessor :name, :type, :price
+
+                def initialize(name, type, price)
+                  @name = name
+                  @type = type
+                  @price = price
+                end
+
+                private
+
+                def method_missing(method_name, *args)
+                  if method_name.to_s =~ /^set_/
+                    variable_name = method_name.to_s.match(/^set_(.*)/)[1]
+                    instance_variable_set("@#{variable_name}", args[0])
+                  elsif method_name.to_s =~ /^get_/
+                    variable_name = method_name.to_s.match(/^get_(.*)/)[1]
+                    instance_variable_get("@#{variable_name}")
+                  else
+                    super
+                  end
+                end
+
+
+                def respond_to_missing?(method_name, include_private = false)
+                  return true if method_name.to_s =~ /^set_/ || method_name.to_s =~ /^get_/
+                  super
+                end
+              end
+            </code>
+          </pre>
+
+          <div class="personal-content-post">
+            <p>
+              Sed eu risus ac dolor auctor interdum quis eget eros. Ut ultrices ut ex quis rhoncus. Ut id est at nunc placerat eleifend. Sed id lacus nulla. Sed mi nulla, accumsan eget velit eget, sollicitudin venenatis leo. Nam porttitor diam ut arcu feugiat bibendum. Vivamus commodo justo vitae fermentum semper. Donec molestie consectetur nisl consectetur porta. Morbi pulvinar accumsan semper. Nullam ac metus elit.
+            </p>
+          </div>
+
+          <pre>
+            <code>
+              class Package
+                attr_reader :products, :tags, :stamps
+
+                def initialize
+                  @products = []
+                  @tags = []
+                  @stamps = []
+                end
+
+                def add_product(product, quantity)
+                  @products << {
+                    info: product,
+                    quantity: quantity
+                  }
+                end
+
+                ["tag", "stamp"].each do |item|
+                  define_method "add_#{item}" do |value|
+                    instance_variable = self.send("#{item}s")
+                    instance_variable.send("<<", value)
+                  end
+                end
+              end
+            </code>
+          </pre>
+
+
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </body>
+</html>
